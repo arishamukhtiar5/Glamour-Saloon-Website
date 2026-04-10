@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Glamour Saloon – Contact & Booking</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <i class="fas fa-spa"></i>
+        <span>Glamour<em>Saloon</em></span>
+      </a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="contact.html" class="nav-link active">Contact</a></li>
+        <li><a href="contact.html" class="nav-btn">Book Now</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== PAGE HERO ===== -->
+  <section class="page-hero" style="background-image: url('https://images.unsplash.com/photo-1600948836101-f9ffda59d250?w=1600&q=80')">
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <span class="section-tag" style="color:#f8d7c8;">Get In Touch</span>
+      <h1>Contact & <em>Booking</em></h1>
+      <p>We'd love to hear from you — book your appointment today!</p>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <i class="fas fa-chevron-right"></i>
+        <span>Contact</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT INFO CARDS ===== -->
+  <section class="contact-info-section">
+    <div class="container">
+      <div class="contact-info-grid reveal">
+        <div class="info-card">
+          <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <h3>Visit Us</h3>
+          <p>Glamour Saloon, Pakistan<br>Karachi,Jinnah road</p>
+          <a href="https://maps.google.com" target="_blank" class="info-link">Get Directions <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="info-card">
+          <div class="info-icon"><i class="fas fa-phone-alt"></i></div>
+          <h3>Call Us</h3>
+          <p>+92 370 1001249<br>+92 318 0251203</p>
+          <a href="tel:+923701001249" class="info-link">Call Now <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="info-card">
+          <div class="info-icon"><i class="fas fa-envelope"></i></div>
+          <h3>Email Us</h3>
+          <p>arishamukhtiar303@gmail.com<br>Abhiakomal1@gmail.com</p>
+          <a href="mailto:arishamukhtiar303@gmail.com" class="info-link">Send Email <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="info-card">
+          <div class="info-icon"><i class="fas fa-clock"></i></div>
+          <h3>Working Hours</h3>
+          <p>Monday – Saturday: 9am – 8pm<br>Sunday: 10am – 6pm</p>
+          <a href="contact.html" class="info-link">Book Slot <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BOOKING FORM + MAP ===== -->
+  <section class="booking-section">
+    <div class="container">
+      <div class="booking-grid">
+        <!-- FORM -->
+        <div class="booking-form-wrap reveal">
+          <span class="section-tag">Book Appointment</span>
+          <h2>Schedule Your <em>Visit</em></h2>
+          <p>Fill in the form below and we'll confirm your appointment within 24 hours.</p>
+
+          <form class="booking-form" id="bookingForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name *</label>
+                <input type="text" id="firstName" placeholder="Your first name" required/>
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name *</label>
+                <input type="text" id="lastName" placeholder="Your last name" required/>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" placeholder="your@email.com" required/>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" placeholder="+92 300 0000000" required/>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="service">Service Required *</label>
+                <select id="service" required>
+                  <option value="" disabled selected>Select a service</option>
+                  <optgroup label="Hair Services">
+                    <option>Women's Haircut & Blow Dry</option>
+                    <option>Men's Haircut & Style</option>
+                    <option>Hair Colouring</option>
+                    <option>Balayage / Ombre</option>
+                    <option>Keratin Treatment</option>
+                    <option>Hair Spa</option>
+                  </optgroup>
+                  <optgroup label="Skin & Facial">
+                    <option>Classic Facial</option>
+                    <option>Gold Facial</option>
+                    <option>Hydra-Dermabrasion</option>
+                    <option>Brightening Peel</option>
+                    <option>Threading & Waxing</option>
+                  </optgroup>
+                  <optgroup label="Nail Services">
+                    <option>Classic Manicure</option>
+                    <option>Gel Manicure</option>
+                    <option>Acrylic Nails</option>
+                    <option>Nail Art Design</option>
+                    <option>Pedicure Deluxe</option>
+                  </optgroup>
+                  <optgroup label="Makeup & Bridal">
+                    <option>Party Makeup</option>
+                    <option>Bridal Makeup</option>
+                    <option>Engagement Makeup</option>
+                    <option>Airbrush Makeup</option>
+                    <option>HD Makeup</option>
+                  </optgroup>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="stylist">Preferred Stylist</label>
+                <select id="stylist">
+                  <option value="" selected>No preference</option>
+                  <option>Zara Khan (Hair Specialist)</option>
+                  <option>Amna Malik (Skin Expert)</option>
+                  <option>Sana Riaz (Nail Artist)</option>
+                  <option>Hira Shah (Makeup Artist)</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="date">Preferred Date *</label>
+                <input type="date" id="date" required/>
+              </div>
+              <div class="form-group">
+                <label for="time">Preferred Time *</label>
+                <select id="time" required>
+                  <option value="" disabled selected>Select time</option>
+                  <option>9:00 AM</option>
+                  <option>10:00 AM</option>
+                  <option>11:00 AM</option>
+                  <option>12:00 PM</option>
+                  <option>1:00 PM</option>
+                  <option>2:00 PM</option>
+                  <option>3:00 PM</option>
+                  <option>4:00 PM</option>
+                  <option>5:00 PM</option>
+                  <option>6:00 PM</option>
+                  <option>7:00 PM</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group full">
+              <label for="message">Additional Notes</label>
+              <textarea id="message" rows="4" placeholder="Any special requests or information..."></textarea>
+            </div>
+            <button type="submit" class="btn-primary submit-btn">
+              <i class="fas fa-calendar-check"></i> Confirm Appointment
+            </button>
+          </form>
+
+          <!-- SUCCESS MESSAGE -->
+          <div class="form-success" id="formSuccess">
+            <div class="success-icon"><i class="fas fa-check-circle"></i></div>
+            <h3>Appointment Booked!</h3>
+            <p>Thank you! We've received your request and will confirm your appointment within 24 hours via email or phone.</p>
+            <button class="btn-primary" onclick="resetForm()">Book Another</button>
+          </div>
+        </div>
+
+        <!-- INFO SIDE -->
+        <div class="contact-side reveal">
+          <div class="contact-side-img">
+            <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?w=600&q=80" alt="Salon Interior"/>
+          </div>
+
+          <div class="why-us-box">
+            <h3>Why Choose <em>Us?</em></h3>
+            <ul>
+              <li><i class="fas fa-check-circle"></i> 100% Satisfaction Guaranteed</li>
+              <li><i class="fas fa-check-circle"></i> Certified & Experienced Stylists</li>
+              <li><i class="fas fa-check-circle"></i> Premium International Products</li>
+              <li><i class="fas fa-check-circle"></i> Clean & Hygienic Environment</li>
+              <li><i class="fas fa-check-circle"></i> Flexible Appointment Timing</li>
+              <li><i class="fas fa-check-circle"></i> Best Prices in the City</li>
+            </ul>
+          </div>
+
+          <div class="social-follow">
+            <h3>Follow Us</h3>
+            <p>Stay updated with our latest looks and offers</p>
+            <div class="social-links large">
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-tiktok"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MAP SECTION ===== -->
+  <section class="map-section reveal">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Find Us</span>
+        <h2>Our <em>Location</em></h2>
+      </div>
+    </div>
+    <div class="map-wrapper">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3401.838869394394!2d74.32890027515614!3d31.502498874245855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391904b38a2d0e45%3A0x56ca1f54e6f4bccb!2sGulberg%20III%2C%20Lahore%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade" title="Glamour Salon Location">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- ===== FAQ SECTION ===== -->
+  <section class="faq-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">FAQs</span>
+        <h2>Frequently Asked <em>Questions</em></h2>
+      </div>
+      <div class="faq-list reveal">
+        <div class="faq-item">
+          <button class="faq-question">
+            Do I need to book an appointment in advance?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>We recommend booking at least 24–48 hours in advance, especially for bridal and special event services. Walk-ins are welcome based on availability.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            What products do you use?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>We use only premium international brands including L'Oréal Professional, Wella, OPI, and Dermalogica — all certified and safe for skin & hair.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            How early should I arrive for bridal makeup?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>For bridal services, we recommend arriving 15–20 minutes early. Full bridal makeup & hair takes 3–5 hours, so please plan accordingly.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Do you offer home service?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Yes! We offer home bridal services for events. A minimum booking value applies. Contact us for more details and to check availability.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            What is your cancellation policy?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>You can cancel or reschedule up to 12 hours before your appointment without any charge. Late cancellations may incur a nominal fee.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <i class="fas fa-spa"></i>
+            <span>Glamour<em>Saloon</em></span>
+          </a>
+          <p>Where beauty meets elegance. Discover a new level of luxury care in our award-winning saloon.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html">Book Appointment</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="services.html#hair">Hair Services</a></li>
+            <li><a href="services.html#skin">Skin & Facials</a></li>
+            <li><a href="services.html#nails">Nail Art</a></li>
+            <li><a href="services.html#makeup">Bridal Makeup</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <ul class="contact-info">
+            <li><i class="fas fa-map-marker-alt"></i>Glamour Saloon, Pakistan</li>
+            <li><i class="fas fa-phone"></i> +92 370 1001249</li>
+            <li><i class="fas fa-envelope"></i> arishamukhtiar303@gmail.com</li>
+            <li><i class="fas fa-clock"></i> Mon–Sat: 9am – 8pm</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

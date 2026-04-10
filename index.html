@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Glamour Salon – Home</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <i class="fas fa-spa"></i>
+        <span>Glamour<em>Saloon</em></span>
+      </a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li><a href="contact.html" class="nav-btn">Book Now</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SLIDER ===== -->
+  <section class="hero-slider" id="heroSlider">
+    <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1600&q=80')">
+      <div class="slide-overlay"></div>
+      <div class="slide-content">
+        <span class="slide-tag">Welcome to Glamour Salon</span>
+        <h1>Where Beauty<br><em>Meets Elegance</em></h1>
+        <p>Experience the finest hair, skin & nail care in a luxurious setting crafted just for you.</p>
+        <div class="slide-btns">
+          <a href="services.html" class="btn-primary">Our Services</a>
+          <a href="contact.html" class="btn-outline">Book Appointment</a>
+        </div>
+      </div>
+    </div>
+    <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=1600&q=80')">
+      <div class="slide-overlay"></div>
+      <div class="slide-content">
+        <span class="slide-tag">Hair Styling Experts</span>
+        <h1>Redefine Your<br><em>Perfect Look</em></h1>
+        <p>Our skilled stylists bring out the best version of you with every cut, colour & style.</p>
+        <div class="slide-btns">
+          <a href="services.html" class="btn-primary">Explore Hair</a>
+          <a href="contact.html" class="btn-outline">Book Now</a>
+        </div>
+      </div>
+    </div>
+    <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=1600&q=80')">
+      <div class="slide-overlay"></div>
+      <div class="slide-content">
+        <span class="slide-tag">Skin & Beauty Treatments</span>
+        <h1>Glow From<br><em>Within</em></h1>
+        <p>Rejuvenating facials, skin care therapies & makeup to make you feel absolutely radiant.</p>
+        <div class="slide-btns">
+          <a href="services.html" class="btn-primary">View Treatments</a>
+          <a href="contact.html" class="btn-outline">Contact Us</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slider Controls -->
+    <button class="slider-arrow prev" id="sliderPrev"><i class="fas fa-chevron-left"></i></button>
+    <button class="slider-arrow next" id="sliderNext"><i class="fas fa-chevron-right"></i></button>
+    <div class="slider-dots" id="sliderDots">
+      <span class="dot active" data-index="0"></span>
+      <span class="dot" data-index="1"></span>
+      <span class="dot" data-index="2"></span>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT STRIP ===== -->
+  <section class="about-strip reveal">
+    <div class="container">
+      <div class="strip-grid">
+        <div class="strip-item">
+          <i class="fas fa-star"></i>
+          <h3>Premium Quality</h3>
+          <p>Only the finest products & techniques</p>
+        </div>
+        <div class="strip-item">
+          <i class="fas fa-user-tie"></i>
+          <h3>Expert Stylists</h3>
+          <p>Certified professionals with years of experience</p>
+        </div>
+        <div class="strip-item">
+          <i class="fas fa-heart"></i>
+          <h3>Client First</h3>
+          <p>Your comfort & satisfaction is our priority</p>
+        </div>
+        <div class="strip-item">
+          <i class="fas fa-clock"></i>
+          <h3>Flexible Hours</h3>
+          <p>Open 7 days — morning to evening</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section class="about-section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-images reveal">
+          <div class="img-main">
+            <img src="https://images.unsplash.com/photo-1600948836101-f9ffda59d250?w=600&q=80" alt="Salon Interior"/>
+          </div>
+          <div class="img-badge">
+            <span class="badge-num">10+</span>
+            <span class="badge-text">Years of Excellence</span>
+          </div>
+          <div class="img-second">
+            <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?w=400&q=80" alt="Stylist at work"/>
+          </div>
+        </div>
+        <div class="about-text reveal">
+          <span class="section-tag">About Us</span>
+          <h2>A Sanctuary of <em>Beauty & Style</em></h2>
+          <p>At Glamour Salon, we believe beauty is an art. Since 2014, we have been transforming lives with our exceptional hair, skin, and nail care services. Our luxurious salon is designed to offer you a relaxing escape from the everyday hustle.</p>
+          <p>Our team of certified professionals stays up-to-date with the latest trends, using only premium, eco-friendly products to ensure your safety and satisfaction.</p>
+          <ul class="about-list">
+            <li><i class="fas fa-check-circle"></i> 5000+ Happy Clients</li>
+            <li><i class="fas fa-check-circle"></i> 20+ Expert Stylists</li>
+            <li><i class="fas fa-check-circle"></i> 50+ Premium Services</li>
+            <li><i class="fas fa-check-circle"></i> Award-Winning Salon</li>
+          </ul>
+          <a href="services.html" class="btn-primary">Discover Our Services</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES PREVIEW ===== -->
+  <section class="services-preview">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">What We Offer</span>
+        <h2>Our Featured <em>Services</em></h2>
+        <p>From hair transformations to relaxing spa treatments — we do it all.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="fas fa-cut"></i></div>
+          <h3>Hair Cutting & Styling</h3>
+          <p>Precision cuts and modern styles tailored to your personality and face shape.</p>
+          <a href="services.html" class="card-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="fas fa-paint-brush"></i></div>
+          <h3>Hair Colouring</h3>
+          <p>Balayage, highlights, ombre & full colour treatments using premium dyes.</p>
+          <a href="services.html" class="card-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="fas fa-spa"></i></div>
+          <h3>Facial & Skin Care</h3>
+          <p>Revitalising facials and skin treatments to keep your skin glowing and healthy.</p>
+          <a href="services.html" class="card-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="fas fa-hand-sparkles"></i></div>
+          <h3>Nail Art & Manicure</h3>
+          <p>Stunning nail designs, gel nails, acrylics & soothing manicure/pedicure.</p>
+          <a href="services.html" class="card-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="fas fa-magic"></i></div>
+          <h3>Bridal Makeup</h3>
+          <p>Flawless bridal looks that make your special day absolutely unforgettable.</p>
+          <a href="services.html" class="card-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="fas fa-leaf"></i></div>
+          <h3>Ayurvedic Spa</h3>
+          <p>Calming body massages and ayurvedic treatments to rejuvenate your senses.</p>
+          <a href="services.html" class="card-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="center-btn reveal">
+        <a href="services.html" class="btn-primary">View All Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+<section class="testimonials">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">Client Love</span>
+      <h2>What Our Clients <em>Say</em></h2>
+    </div>
+
+    <div class="testimonial-slider" id="testimonialSlider">
+      <div class="testimonial-track" id="testimonialTrack">
+
+        <!-- Card 1 -->
+        <div class="testimonial-card">
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+
+          <p>"Absolutely love this salon! My hair has never looked better. The stylists really listen to what you want and deliver perfection every single time."</p>
+
+          <div class="client-info">
+            <div class="client-avatar">
+              <img src="images/image 1.jpg" alt="Sara Ahmed">
+            </div>
+
+            <div>
+              <strong>Sara Ahmed</strong>
+              <span>Regular Client</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="testimonial-card">
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+
+          <p>"I got my bridal makeup done here and I was blown away. Everyone at the wedding kept complimenting my look. Truly the best salon in town!"</p>
+
+          <div class="client-info">
+            <div class="client-avatar">
+              <img src="images/image 2.jpg" alt="Nadia Khan">
+            </div>
+
+            <div>
+              <strong>Nadia Khan</strong>
+              <span>Bride</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="testimonial-card">
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+
+          <p>"The facial treatment left my skin glowing for weeks! The staff is so friendly and professional. I highly recommend Glamour Salon to everyone."</p>
+
+          <div class="client-info">
+            <div class="client-avatar">
+              <img src="images/image 3.jpg" alt="Maria Malik">
+            </div>
+
+            <div>
+              <strong>Maria Malik</strong>
+              <span>Skin Care Client</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="testimonial-card">
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+
+          <p>"Best nail art I've ever had! So detailed and long-lasting. The ambience of the salon is so relaxing. Will definitely be coming back every month!"</p>
+
+          <div class="client-info">
+            <div class="client-avatar">
+              <img src="images/image 5.jpg" alt="Fatima Raza">
+            </div>
+
+            <div>
+              <strong>Fatima Raza</strong>
+              <span>Nail Art Client</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="testimonial-controls">
+      <button class="t-btn" id="tPrev">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+
+      <button class="t-btn" id="tNext">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+    </div>
+
+  </div>
+</section>
+  <!-- ===== CTA SECTION ===== -->
+  <section class="cta-section reveal">
+    <div class="cta-overlay"></div>
+    <div class="container">
+      <div class="cta-content">
+        <h2>Ready for Your <em>Transformation?</em></h2>
+        <p>Book your appointment today and let our experts bring out your inner glow.</p>
+        <a href="contact.html" class="btn-primary">Book an Appointment</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <i class="fas fa-spa"></i>
+            <span>Glamour<em>Saloon</em></span>
+          </a>
+          <p>Where beauty meets elegance. Discover a new level of luxury care in our award-winning saloon.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html">Book Appointment</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="services.html">Hair Cutting</a></li>
+            <li><a href="services.html">Hair Colouring</a></li>
+            <li><a href="services.html">Facial & Skin Care</a></li>
+            <li><a href="services.html">Bridal Makeup</a></li>
+            <li><a href="services.html">Nail Art</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <ul class="contact-info">
+            <li><i class="fas fa-map-marker-alt"></i> Glamour Saloon, Pakistan</li>
+            <li><i class="fas fa-phone"></i> +92 370 1001249</li>
+            <li><i class="fas fa-envelope"></i> arishamukhtiar303@gmail.com</li>
+            <li><i class="fas fa-clock"></i> Mon–Sat: 9am – 8pm</li>
+          </ul>
+        </div>
+      </div>
+   
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
